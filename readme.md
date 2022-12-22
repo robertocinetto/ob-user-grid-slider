@@ -1,19 +1,14 @@
 # O&#x2F;B Users Grid Slider
 
-Contributors: Roberto Cinetto
-Tags: block
-Tested up to: 6.1
-Stable tag: 0.1.0
-License: GPL-2.0-or-later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-
 An awesome Gutemberg block built for the amazing guys at Office Bureau! 😎
 
 ### Installation
 
 This section describes how to install the plugin and get it working.
 
-1. Clone this repository directly into your WordPress plugin directory, or download the zip file and install it from the plugins admin panel inside Wordpress
+1. Download the zip file and install it from the plugins admin panel inside Wordpress
+   or
+   Clone the repository at https://github.com/robertocinetto/ob-user-grid-slider directly inside the plugins directory
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. The block is now available to use in the Gutemberg block editor
 
@@ -39,7 +34,9 @@ You can use the block in any main content inside your website.
 6. You can edit or delete the interests. Just select one and edit the text in the field ore press the button to delete it
    <img src="https://robertocinetto.com/files/ob/5.png">
 
-7. Publish or save the edits and view the results
+7. Create or duplicate the block to add other elements to the grid
+
+8. Publish or save the edits and view the results
 
 ### Changelog
 
