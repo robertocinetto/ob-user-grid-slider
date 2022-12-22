@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
 	"name": "officebureau-ca/ob-user-grid-slider",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"title": "O/B Users Grid Slider",
 	"category": "widgets",
 	"icon": "groups",
