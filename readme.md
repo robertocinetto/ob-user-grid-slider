@@ -40,6 +40,10 @@ You can use the block in any main content inside your website.
 
 ### Changelog
 
+= 0.1.1 =
+
+-   Minor bugfixes
+
 = 0.1.0 =
 
 -   Release
