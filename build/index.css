@@ -1,0 +1,85 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-officebureau-ca-ob-user-grid-slider {
+  border: none;
+  background-color: transparent;
+  color: #333;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="officebureau-ca/ob-user"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="officebureau-ca/ob-user"] .block-editor-media-placeholder {
+  margin-bottom: 20px;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="officebureau-ca/ob-user"] .ob-grid-element-img {
+  position: relative;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="officebureau-ca/ob-user"] .ob-grid-element-img.is-loading img {
+  opacity: 0.3;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="officebureau-ca/ob-user"] .ob-grid-element-img .components-spinner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="officebureau-ca/ob-user"] .wp-block-officebureau-ca-ob-user-grid-slider-interests .interests-label {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  display: block;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  max-width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="officebureau-ca/ob-user"] .wp-block-officebureau-ca-ob-user-grid-slider-interests ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 -5px 10px;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="officebureau-ca/ob-user"] .wp-block-officebureau-ca-ob-user-grid-slider-interests ul li {
+  display: inline-block;
+  margin: 5px;
+  font-size: 0.8rem;
+  background-color: #eee;
+  padding: 3px 5px;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="officebureau-ca/ob-user"] .wp-block-officebureau-ca-ob-user-grid-slider-interests ul li span.dashicon {
+  color: #4e4e4e;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="officebureau-ca/ob-user"] .wp-block-officebureau-ca-ob-user-grid-slider-interests ul li.is-selected {
+  outline: 2px solid rgb(207, 41, 228);
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="officebureau-ca/ob-user"] .wp-block-officebureau-ca-ob-user-grid-slider-interests ul li button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="officebureau-ca/ob-user"] .wp-block-officebureau-ca-ob-user-grid-slider-interests ul li.wp-block-officebureau-ca-ob-user-grid-slider-add-icon-li button {
+  outline: 1px dashed;
+}
+
+/*# sourceMappingURL=index.css.map*/

@@ -1,0 +1,280 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+$primary: rgb(0, 145, 185);
+
+.wp-block-officebureau-ca-ob-user-grid-slider {
+	margin-block: 100px;
+	padding: 10px;
+	color: #333;
+
+	> h2 {
+		font-size: 50px;
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+	> h3 {
+		color: $primary;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 50px;
+	}
+
+	.ob-user-container {
+		display: flex;
+		position: relative;
+
+		.ob-user-nav {
+			position: absolute;
+			width: 80px;
+			height: 60px;
+			bottom: -80px;
+			cursor: pointer;
+		}
+
+		.ob-user-nav-next {
+			right: 0;
+			transform: translate(-50%,-50%);
+			display: block;
+
+			&.hide {
+				display: none;
+			}
+		}
+		.ob-user-nav-prev {
+			left: 0;
+			transform: translate(50%,-50%);
+			display: block;
+
+			&.hide {
+				display: none;
+			}
+		}
+		
+		.arrow {
+			position: absolute;
+			top: 25px;
+			width: 90%;
+			height: 10px;
+			background-color: $primary;
+			box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+			animation: arrow 700ms linear infinite;
+		}
+		
+		.arrow::after, .arrow::before {
+			content: '';
+			position: absolute;
+			width: 60%;
+			height: 10px;
+			right: -8px;
+			background-color: $primary;
+		}
+		
+		.arrow::after {
+			top: -12px;
+			transform: rotate(45deg);
+		}
+		
+		.arrow::before {
+			top: 12px;
+			box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+			transform: rotate(-45deg);
+		}
+
+		.ob-user-nav-prev .arrow::after, .ob-user-nav-prev .arrow::before {
+			content: '';
+			position: absolute;
+			width: 60%;
+			height: 10px;
+			left: -8px;
+			background-color: $primary;
+		}
+		.ob-user-nav-prev .arrow::after {
+			top: -12px;
+			transform: rotate(-45deg);
+		}
+		
+		.ob-user-nav-prev .arrow::before {
+			top: 12px;
+			box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+			transform: rotate(45deg);
+		}
+	
+	}
+
+	.ob-user-grid-filters {
+		display: flex;
+		flex-direction: column;
+		width: 300px;
+		padding: 0 20px 0 0;
+		align-items: flex-start;
+
+		button {
+			margin-bottom: 10px;;
+			padding: 6px;
+			font-size: 11px;
+			font-weight: bold;
+			border-radius: 12px;
+			background-color: #fff;
+			transition: color 300ms, background-color 300ms;
+			cursor: pointer;
+			
+			&.active {
+				background-color: $primary;
+				color: #fff;
+			}
+			&:hover {
+				background-color: $primary;
+				color: #fff;
+			}
+		}
+	}
+	.ob-user-grid {
+		display: grid;
+		position: relative;
+    grid-template-rows: auto auto;
+    grid-auto-flow: column;
+		gap: 10px;
+
+		// hiding scroll bar, allowing to scroll anyway
+		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none;  /* Internet Explorer 10+ */
+
+		&::-webkit-scrollbar { /* WebKit */
+				width: 0;
+				height: 0;
+		}
+
+		// gradient fading at the right of the grid
+    --scrollbar-width: 0px;
+    --mask-width: 32px;
+    overflow-x: auto;
+    padding-bottom: var(--mask-width);
+    padding-right: 30px;
+
+    /* The CSS mask */
+    --mask-image-content: linear-gradient(
+        to right,
+        black calc(100% - var(--mask-width)),
+        transparent
+    );
+    --mask-size-content: calc(100% - var(--scrollbar-width)) 100%;
+    --mask-image-scrollbar: linear-gradient(black, black);
+    --mask-size-scrollbar: var(--scrollbar-width) 100%;
+    mask-image: var(--mask-image-content), var(--mask-image-scrollbar);
+    mask-size: var(--mask-size-content), var(--mask-size-scrollbar);
+    mask-position: 0 0, 100% 0;
+    mask-repeat: no-repeat, no-repeat;
+	}
+
+	.ob-user-grid-elem {
+		background-color: #f8f8f8;
+		width: 250px;
+		text-align: center;
+		padding: 20px;
+		border-radius: 4px;
+		opacity: 0;
+		animation: fade-in 500ms forwards;
+		transition: all 500ms;
+		
+		&.closing {
+			animation: fade-out 500ms forwards;
+		}
+
+		&.hide {
+			display: none;
+		}
+
+		> img {
+			width: 100px;
+			height: 100px;
+			border-radius: 100%;
+			object-fit: cover;
+			margin-bottom: 10px
+		}
+		> h3 {
+			font-family: 'Times New Roman', Times, serif;
+			font-size: 1.5rem;
+			font-weight: normal;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		> h4 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 0.8rem;
+			margin-top: 0;
+			margin-bottom: 0;
+			color:$primary;
+			text-transform: uppercase;
+		}
+		> h5 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 0.75rem;
+			font-weight: normal;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		> h4.ob-interests {
+			color: #333;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			color: $primary;
+			display: inline-block;
+			text-align: center;
+			font-size: 0.85rem;
+			margin-right: 10px;
+		}
+		li:before {
+			content: '•';
+			font-weight: bold;
+			font-size: 1rem;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.wp-block-officebureau-ca-ob-user-grid-slider {
+		.ob-user-container {
+			display: block;
+		}	
+		.ob-user-grid-filters {
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: auto;
+			padding: 0;
+
+			button {
+				margin-right: 5px;
+				padding: 10px;
+			}
+		}
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,255 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-officebureau-ca-ob-user-grid-slider {
+  margin-block: 100px;
+  padding: 10px;
+  color: #333;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider > h3 {
+  color: rgb(0, 145, 185);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container {
+  display: flex;
+  position: relative;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .ob-user-nav {
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  bottom: -80px;
+  cursor: pointer;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .ob-user-nav-next {
+  right: 0;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .ob-user-nav-next.hide {
+  display: none;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .ob-user-nav-prev {
+  left: 0;
+  transform: translate(50%, -50%);
+  display: block;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .ob-user-nav-prev.hide {
+  display: none;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .arrow {
+  position: absolute;
+  top: 25px;
+  width: 90%;
+  height: 10px;
+  background-color: rgb(0, 145, 185);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  animation: arrow 700ms linear infinite;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .arrow::after, .wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .arrow::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 10px;
+  right: -8px;
+  background-color: rgb(0, 145, 185);
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .arrow::after {
+  top: -12px;
+  transform: rotate(45deg);
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .arrow::before {
+  top: 12px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-45deg);
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .ob-user-nav-prev .arrow::after, .wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .ob-user-nav-prev .arrow::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 10px;
+  left: -8px;
+  background-color: rgb(0, 145, 185);
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .ob-user-nav-prev .arrow::after {
+  top: -12px;
+  transform: rotate(-45deg);
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container .ob-user-nav-prev .arrow::before {
+  top: 12px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(45deg);
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-filters {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 0 20px 0 0;
+  align-items: flex-start;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-filters button {
+  margin-bottom: 10px;
+  padding: 6px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 12px;
+  background-color: #fff;
+  transition: color 300ms, background-color 300ms;
+  cursor: pointer;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-filters button.active {
+  background-color: rgb(0, 145, 185);
+  color: #fff;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-filters button:hover {
+  background-color: rgb(0, 145, 185);
+  color: #fff;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  gap: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  --scrollbar-width: 0px;
+  --mask-width: 32px;
+  overflow-x: auto;
+  padding-bottom: var(--mask-width);
+  padding-right: 30px;
+  /* The CSS mask */
+  --mask-image-content: linear-gradient(
+      to right,
+      black calc(100% - var(--mask-width)),
+      transparent
+  );
+  --mask-size-content: calc(100% - var(--scrollbar-width)) 100%;
+  --mask-image-scrollbar: linear-gradient(black, black);
+  --mask-size-scrollbar: var(--scrollbar-width) 100%;
+  -webkit-mask-image: var(--mask-image-content), var(--mask-image-scrollbar);
+          mask-image: var(--mask-image-content), var(--mask-image-scrollbar);
+  -webkit-mask-size: var(--mask-size-content), var(--mask-size-scrollbar);
+          mask-size: var(--mask-size-content), var(--mask-size-scrollbar);
+  -webkit-mask-position: 0 0, 100% 0;
+          mask-position: 0 0, 100% 0;
+  -webkit-mask-repeat: no-repeat, no-repeat;
+          mask-repeat: no-repeat, no-repeat;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-elem {
+  background-color: #f8f8f8;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 4px;
+  opacity: 0;
+  animation: fade-in 500ms forwards;
+  transition: all 500ms;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-elem.closing {
+  animation: fade-out 500ms forwards;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-elem.hide {
+  display: none;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-elem > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-elem > h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-elem > h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgb(0, 145, 185);
+  text-transform: uppercase;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-elem > h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-elem > h4.ob-interests {
+  color: #333;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-elem ul {
+  margin: 0;
+  padding: 0;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-elem li {
+  color: rgb(0, 145, 185);
+  display: inline-block;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-right: 10px;
+}
+.wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-elem li:before {
+  content: "•";
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .wp-block-officebureau-ca-ob-user-grid-slider .ob-user-container {
+    display: block;
+  }
+  .wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-filters {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 0;
+  }
+  .wp-block-officebureau-ca-ob-user-grid-slider .ob-user-grid-filters button {
+    margin-right: 5px;
+    padding: 10px;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/
